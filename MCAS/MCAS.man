@@ -1,0 +1,40 @@
+----- INPUT FILE FORMATS:
+
+Family data: 
+Structure: each row variable data
+                col 1: distribution D
+		col 2 to ... is dist params
+dists: U = Uniform (max, min), N = Normal (mu, sigma)
+ 
+       Rows: D Radius
+             D Bulk density
+             D Activity factor
+             D Crit radius
+
+
+
+
+----- OUTPUT FILE FORMATS:
+
+encounter_data.txt: // one row for each object, UNITS: degrees, AU, solar masses, years
+	current PB ID, Time, Semi-Major axis, Eccentricity, Inclination, Argument of perihelion, Longitude of ascending node, Mean anomaly, True anomaly, Mass
+
+earth_encounter_data.txt: // one row for each object, UNITS: degrees, AU, solar masses, years
+	current PB ID, Time, Semi-Major axis, Eccentricity, Inclination, Argument of perihelion, Longitude of ascending node, Mean anomaly, True anomaly, Mass
+
+ejector_kep_data.txt: // one row for each shower generating PB, UNITS: AU, degrees
+	Semi-Major axis, Eccentricity, Inclination, Argument of perihelion, Longitude of ascending node, True anomaly, eccentric anomly
+
+ejector_char_data.txt: // one row for each shower generating PB
+	Body radius, Bulk density, Activity factor, Heliocentric radius for sublimation
+
+ejector_n_data.txt: // one row for each shower generating PB
+	total N PB generated (current PB ID), total N TP created, current N TP created, total N TP encountered, current N TP encountered
+
+
+CLOSE6 OUT:
+ - Encounter time (0), encounter object name (1), closest distance (2)
+	- Object 1 (planet)
+		Semi-Major axis (3), Eccentricity (4), Inclination (5), longitude of perihelion (NOT argument of perihelion!!) (6), 			longitude of ascending node (7), mean anomaly (or mean longitude if e < 1.e-8) (8)
+	- Object 2 (test particle)
+		Semi-Major axis (9), Eccentricity (10), Inclination (11), longitude of perihelion (NOT argument of perihelion!!) (12), longitude of ascending node (13), mean anomaly (or mean longitude if e < 1.e-8) (14)
