@@ -1,0 +1,26 @@
+./JPL_orig header.430_572 ascp1550.430 bin1550.430; mv bin1550.430 /home/dankas/MCAS/JPL_merge/Debug/bin1550.430;
+./JPL_orig header.430_572 ascp1650.430 bin1650.430; mv bin1650.430 /home/dankas/MCAS/JPL_merge/Debug/bin1650.430;
+./JPL_orig header.430_572 ascp1750.430 bin1750.430; mv bin1750.430 /home/dankas/MCAS/JPL_merge/Debug/bin1750.430;
+./JPL_orig header.430_572 ascp1850.430 bin1850.430; mv bin1850.430 /home/dankas/MCAS/JPL_merge/Debug/bin1850.430;
+./JPL_orig header.430_572 ascp1950.430 bin1950.430; mv bin1950.430 /home/dankas/MCAS/JPL_merge/Debug/bin1950.430;
+./JPL_orig header.430_572 ascp2050.430 bin2050.430; mv bin2050.430 /home/dankas/MCAS/JPL_merge/Debug/bin2050.430;
+./JPL_orig header.430_572 ascp2150.430 bin2150.430; mv bin2150.430 /home/dankas/MCAS/JPL_merge/Debug/bin2150.430;
+./JPL_orig header.430_572 ascp2250.430 bin2250.430; mv bin2250.430 /home/dankas/MCAS/JPL_merge/Debug/bin2250.430;
+./JPL_orig header.430_572 ascp2350.430 bin2350.430; mv bin2350.430 /home/dankas/MCAS/JPL_merge/Debug/bin2350.430;
+./JPL_orig header.430_572 ascp2450.430 bin2450.430; mv bin2450.430 /home/dankas/MCAS/JPL_merge/Debug/bin2450.430;
+./JPL_orig header.430_572 ascp2550.430 bin2550.430; mv bin2550.430 /home/dankas/MCAS/JPL_merge/Debug/bin2550.430;
+
+cp bin1550.430 bin1550to2550.430;
+
+./JPL_merge bin1550to2550.430 bin1650.430;
+./JPL_merge bin1550to2550.430 bin1750.430;
+./JPL_merge bin1550to2550.430 bin1850.430;
+./JPL_merge bin1550to2550.430 bin1950.430;
+./JPL_merge bin1550to2550.430 bin2050.430;
+./JPL_merge bin1550to2550.430 bin2150.430;
+./JPL_merge bin1550to2550.430 bin2250.430;
+./JPL_merge bin1550to2550.430 bin2350.430;
+./JPL_merge bin1550to2550.430 bin2450.430;
+./JPL_merge bin1550to2550.430 bin2550.430;
+
+

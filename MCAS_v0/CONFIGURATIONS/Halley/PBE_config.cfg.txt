@@ -1,0 +1,19 @@
+#%%%%%%%%%%%%%%%% CONFIGURATION FILE %%%%%%%%%%%%%%%%%
+#-------------------------------
+#Simulation settings
+#-------------------------------
+#Ejection model:
+# 0 = Ma et al. 2002
+# 1 = Hughes et al. 2000
+# 2 = Whipple 1951
+# 3 = from 0 to input at perihelion
+#-------------------------------
+Ejection model					=2
+Time step (days)				=2
+Number of orbits	 			=1
+Max Particles	 				=2e+03
+Maximum number of ejection instances		=50
+Print precision					=10
+Output type  (helio 0 /bary 1)       		=0
+Max velocity for model 3 [m/s]			=70
+%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%

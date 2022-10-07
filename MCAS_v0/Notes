@@ -1,0 +1,15 @@
+cp ${BuildArtifactFilePrefix}${BuildArtifactFileName} "${workspace_loc:/MCAS_0_1}/Combine_MCAS/JPL/";
+
+
+
+
+
+TO COMPILE:
+
+sudo apt-get install libboost-dev-all
+sudo apt-get install g++
+
+In eclipse:
+Project -> Properties -> C/C++ Build -> Settings -> Tool Settings -> GCC C++ Linker -> Libraries -> Add libraries:
+"boost_filesystem"
+"boost_system"

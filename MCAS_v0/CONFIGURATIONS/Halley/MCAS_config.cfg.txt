@@ -1,0 +1,80 @@
+#%%%%%%%%%%%%%%%% CONFIGURATION FILE %%%%%%%%%%%%%%%%
+# Lines starting with # are ignored
+#----------------------------------------------------
+#Calculation settings
+#
+#Integrators: 
+# 0 = CMS
+# 1 = mercury6
+#
+#Family:
+# 0 = NEOs (~270k)
+# 1= MBOs (~100k)
+# 2= MBOs --> NEOs (~50k)
+# 3 = Hildas (~1.8k)
+# 4 = Comets (~28k)
+# 5 = Hyperbolic (~8.3k)
+# 6 = LPCs (~9.4k)
+# 7 = Centaures (~60k)
+# 8 = Scattered (~11k)
+# 9 = TNOs  (~48k)
+# 10 = BOTKKE NEO's
+# 11 = Statistical uncententy orbital clone generator (SUOC)
+#
+#Particle mass distribution:
+# 0 = GRUN particle model (only min mass)
+# 1 = Uniform representation, can also be single size if min = max
+# 2 = 10 logarithmic uniform representation (equal probabillity for each exponent)
+# 3 = Custom file (mass_dist.txt), first line masses, second line their respective probabillites
+#
+#Particle mass distribtuion resolution:
+# The resolution of the resulting histogram used in generating the random particles
+#
+#----------------------------------------------------
+Integrator				=1
+Start date (Julian days)		=2449400.5
+Integration time for encounter (years)	=300
+Family					=11
+Calculate clusters			=1
+Particle mass distribution		=2
+Particle mass distribtuion resolution   =500
+Lower mass bound (g)			=1e-6
+Upper mass bound (g)			=1e2
+Memory allocation (Mb)			=1e+03
+Number of showers to generate		=500
+#----------------------------------------------------
+#OUTPUT settings
+#
+#Logfile:
+# 0 = No file
+# 1 = Write file
+#----------------------------------------------------
+Logfile output 				=1
+#----------------------------------------------------
+# mercury6 settings
+#----------------------------------------------------
+#Mercury integrator:
+# 0 = Hybrid
+# 1 = BS
+#
+#----------------------------------------------------
+Mercury integrator			=0
+Time setp (days)			=8
+Include PR effect			=1
+Ejection distance (AU)			=100
+Hybrid changeover (hill radii)		=3
+#----------------------------------------------------
+# SUOC settings
+#----------------------------------------------------
+# Sigma range: 
+#  Normal distribution sigma range
+#
+# Distribution resolution: 
+#  Normal distribution numerical resolution i.e.
+#  the number of bins.
+#
+#----------------------------------------------------
+Number of clones			=1000
+Sigma range				=8
+Distribution resolution			=5000
+%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%
